@@ -1,0 +1,104 @@
+ body {
+  margin: 0;
+  height: 100vh;
+  background-color: #141b41;
+  text-shadow : .5px .5px #98B9F2;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%); 
+ }
+
+
+* {
+  outline: none;
+}
+
+.header {
+  display: block;
+  color: #98B9F2;
+  text-shadow : .5px .5px white;
+  text-align: left;
+  padding-top: 40px;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tasks_div{
+    font-size: 30px;
+    margin: 0;
+ }
+  
+.ion-trash-b {
+  z-index: 10;
+  right: 0;
+  position: absolute;
+  width: 40px;
+  height: 44px;
+  margin-top: -33px;
+  display: flex;
+  margin-right: -40px;
+  transition: margin-right 450ms;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.ion-trash-b:hover {
+  color: #98B9F2;
+}
+
+.ion-ios-list-outline{
+display: inline-block;
+font-size: 100px;
+color: #98B9F2;
+text-shadow : .5px .5px white;
+}
+
+#no_tasks {
+  display: none;
+}
+
+.task {
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  padding: 20px 5px;
+  border-bottom: 2px solid;
+  font-size: 20px;
+  margin: 20px 0px;
+  color: white;
+  text-shadow : .3px .3px black;
+}
+
+.task:hover .ion-trash-b {
+  margin-right: 0px;
+  cursor: pointer;
+  }
+
+  .task-input {
+    font-size: 20px;
+    color: #98B9F2;
+    text-align: left;
+    padding: 5px 10px;
+    margin: 30px;
+    height: 60px;
+    width: 600px;
+    border-bottom: 2px solid white;
+    box-shadow: 8px 8px #98B9F2;
+  }
+
+  .task-input::-webkit-input-placeholder{
+    color: #98B9F2
+  }
+
+.complete {
+ text-decoration: line-through;
+ color: #98B9F2;
+}
